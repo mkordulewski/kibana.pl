@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(kibana\.pl)$ [NC]
+RewriteRule ^ https://www.elastic.co/products/kibana [R=302,L,NE]
